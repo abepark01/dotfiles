@@ -20,9 +20,10 @@ set ruler
 set relativenumber
 set number
 set numberwidth=5
+set colorcolumn=80
+
 " Make backspace act as it should
 set backspace=eol,start,indent
-
 
 " Turn on the wild menu
 set wildmenu
@@ -80,14 +81,9 @@ set nobackup
 set nowb
 set noswapfile
 
-
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-
-" Splits
-set splitbelow
-set splitright
 
 " Always show the last status line
 set laststatus=2
