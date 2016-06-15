@@ -22,6 +22,9 @@ set number
 set numberwidth=5
 set colorcolumn=80
 
+" Display extra whitespace
+set list listchars=tab:»·,trail:·,nbsp:·
+
 " Make backspace act as it should
 set backspace=eol,start,indent
 
