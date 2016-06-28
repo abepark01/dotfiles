@@ -52,3 +52,6 @@
 [submodule "git-aware-prompt"]
 	path = git-aware-prompt
 	url = git://github.com/jimeh/git-aware-prompt.git
+[submodule "YouCompleteMe"]
+	path = YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git

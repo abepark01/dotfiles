@@ -1,3 +1,7 @@
+if has("gui_macvim")
+  set lines=45
+  set columns=150
+endif
 let mapleader = ","
 let g:mapleader = ","
 
