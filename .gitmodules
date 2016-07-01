@@ -52,3 +52,9 @@
 [submodule "git-aware-prompt"]
 	path = git-aware-prompt
 	url = git://github.com/jimeh/git-aware-prompt.git
+[submodule "bundle/vim-lucius"]
+	path = bundle/vim-lucius
+	url = git@github.com:jonathanfilip/vim-lucius.git
+[submodule "bundle/vim-coffee-script"]
+	path = bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script
