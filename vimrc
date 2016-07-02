@@ -18,8 +18,6 @@ set expandtab
 set autoindent
 set smartindent
 
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
 set showmode
 
 " Always show current position
