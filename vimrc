@@ -2,6 +2,11 @@ if has("gui_macvim")
   set lines=45
   set columns=150
 endif
+
+if has('unix')
+  set t_Co=256
+endif
+
 let mapleader = ","
 let g:mapleader = ","
 
