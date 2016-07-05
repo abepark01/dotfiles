@@ -61,3 +61,6 @@
 [submodule "bundle/vim-haml"]
 	path = bundle/vim-haml
 	url = https://github.com/tpope/vim-haml.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
