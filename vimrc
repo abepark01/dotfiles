@@ -152,3 +152,8 @@ set splitright
 
 " NERDTree
 let NERDTreeShowHidden=1
+
+" Load local settings
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
