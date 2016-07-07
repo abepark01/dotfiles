@@ -73,9 +73,6 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
-[submodule "bundle/YCM-Generator"]
-	path = bundle/YCM-Generator
-	url = https://github.com/rdnetto/YCM-Generator.git
 [submodule "YCM-Generator"]
 	path = YCM-Generator
 	url = https://github.com/rdnetto/YCM-Generator.git
