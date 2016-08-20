@@ -13,9 +13,6 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
-set background=dark
-colorscheme Tomorrow-Night
-
 set shiftwidth=2
 set tabstop=2
 set expandtab
