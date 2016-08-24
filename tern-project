@@ -5,6 +5,9 @@
     "jquery"
   ],
   "plugins": {
-    "node": {}
+    "node": {},
+    "modules": {},
+    "es_modules": {},
+    "jasmine": {}
   }
 }
