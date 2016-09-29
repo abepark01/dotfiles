@@ -79,3 +79,12 @@
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = git@github.com:fatih/molokai.git
+[submodule "bundle/indentpython.vim"]
+	path = bundle/indentpython.vim
+	url = https://github.com/vim-scripts/indentpython.vim.git
+[submodule "bundle/SimpylFold"]
+	path = bundle/SimpylFold
+	url = https://github.com/tmhedberg/SimpylFold.git
+[submodule "bundle/vim-flake8"]
+	path = bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
