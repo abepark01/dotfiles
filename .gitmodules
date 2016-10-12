@@ -91,3 +91,6 @@
 [submodule "elm.vim"]
 	path = elm.vim
 	url = https://github.com/lambdatoast/elm.vim
+[submodule "bundle/django.vim"]
+	path = bundle/django.vim
+	url = https://github.com/vim-scripts/django.vim
