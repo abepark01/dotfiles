@@ -89,7 +89,7 @@
 	path = bundle/vim-flake8
 	url = https://github.com/nvie/vim-flake8.git
 [submodule "elm.vim"]
-	path = elm.vim
+	path = bundle/elm.vim
 	url = https://github.com/lambdatoast/elm.vim
 [submodule "bundle/django.vim"]
 	path = bundle/django.vim
