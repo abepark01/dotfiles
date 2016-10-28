@@ -128,7 +128,7 @@ autocmd BufWritePre *.html,*.css,*.scss,*.js,*.py,*.rb,*.h,*.c,*.cpp :%s/\s\+$//
 let g:jsx_ext_required = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
-" NERDTree ignore 
+" NERDTree ignore
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
 " Get off my lawn!
@@ -172,12 +172,11 @@ endif
 if has('python3')
   py3 << EOF
 import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-  project_base_dir= os.environ['VIRTUAL_ENV']
-  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-  with open(activate_this, "r") as f:
-      exec(f.read())
+virtualenv = os.environ.get('VIRTUAL_ENV')
+if virtualenv:
+  activate_this = os.path.join(virtualenv, 'bin', 'activate_this.py')
+  if os.path.exists(activate_this):
+    exec(compile(open(activate_this).read(), activate_this, 'exec'), {'__file__': activate_this}
 EOF
 endif
 
