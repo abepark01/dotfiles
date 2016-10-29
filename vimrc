@@ -181,7 +181,6 @@ EOF
 endif
 
 let python_highlight_all=1
-"let g:ycm_python_binary_path = '/usr/local/bin/python3'
-let g:ycm_python_binary_path = '/home/abe/.virtualenvs/dev/bin/python'
+let g:ycm_python_binary_path = '/usr/local/bin/python3'
 au BufRead,BufNewFile *.py,*.ptw,*.c,*.h highlight BadWhiteSpace ctermbg=red guibg=red
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhiteSpace /\s\+$/
