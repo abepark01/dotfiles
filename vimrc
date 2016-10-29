@@ -176,12 +176,12 @@ virtualenv = os.environ.get('VIRTUAL_ENV')
 if virtualenv:
   activate_this = os.path.join(virtualenv, 'bin', 'activate_this.py')
   if os.path.exists(activate_this):
-    exec(compile(open(activate_this).read(), activate_this, 'exec'), {'__file__': activate_this}
+    exec(compile(open(activate_this).read(), activate_this, 'exec'), {'__file__': activate_this})
 EOF
 endif
 
 let python_highlight_all=1
-let g:ycm_python_binary_path = '/usr/local/bin/python3'
-
+"let g:ycm_python_binary_path = '/usr/local/bin/python3'
+let g:ycm_python_binary_path = '/home/abe/.virtualenvs/dev/bin/python'
 au BufRead,BufNewFile *.py,*.ptw,*.c,*.h highlight BadWhiteSpace ctermbg=red guibg=red
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhiteSpace /\s\+$/
