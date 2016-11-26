@@ -94,3 +94,6 @@
 [submodule "bundle/django.vim"]
 	path = bundle/django.vim
 	url = https://github.com/vim-scripts/django.vim
+[submodule "bundle/phpcomplete.vim"]
+	path = bundle/phpcomplete.vim
+	url = git@github.com:shawncplus/phpcomplete.vim.git
