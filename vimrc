@@ -26,9 +26,6 @@ set number
 set numberwidth=5
 set colorcolumn=80
 
-" Display extra whitespace
-set list listchars=tab:»·,trail:·,nbsp:·
-
 " Make backspace act as it should
 set backspace=eol,start,indent
 
@@ -153,6 +150,10 @@ let NERDTreeShowHidden=1
 " Load local settings
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
+endif
+
+if filereadable(expand("~/vimrc.local"))
+  source $HOME\vimrc.local
 endif
 
 au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
