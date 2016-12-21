@@ -172,4 +172,4 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
-nnoremap K :grep! "\b<C-R>\b"<CR>:cw<CR>
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
