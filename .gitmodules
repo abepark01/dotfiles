@@ -106,3 +106,6 @@
 [submodule "vim/bundle/rust.vim"]
 	path = vim/bundle/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule "vim/bundle/the_silver_searcher"]
+	path = vim/bundle/the_silver_searcher
+	url = https://github.com/ggreer/the_silver_searcher.git

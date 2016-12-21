@@ -161,3 +161,15 @@ au FileType py set foldmethod=indent
 
 " ctrlp settings
 let g:ctrlp_custom_ignore = 'node_modules'
+
+" The Silver Searcher
+if executable('ag')
+  " use ag ove grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+
+nnoremap K :grep! "\b<C-R>\b"<CR>:cw<CR>
