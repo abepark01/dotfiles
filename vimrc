@@ -158,3 +158,6 @@ endif
 
 au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
 au FileType py set foldmethod=indent
+
+" ctrlp settings
+let g:ctrlp_custom_ignore = 'node_modules'
