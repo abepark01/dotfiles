@@ -8,11 +8,6 @@ then
   ln -s $DIR/vimrc $HOME/.vimrc
 fi
 
-if [ ! -L $HOME/.vimrc.local ]
-then
-  ln -s $DIR/vimrc.local $HOME/.vimrc.local
-fi
-
 mkdir -p $HOME/.vim/autoload
 mkdir -p $HOME/.vim/colors
 curl -LSso $HOME/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
