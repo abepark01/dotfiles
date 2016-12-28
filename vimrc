@@ -29,6 +29,9 @@ set colorcolumn=80
 " Make backspace act as it should
 set backspace=eol,start,indent
 
+set list
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+
 " Turn on the wild menu
 set wildmenu
 
