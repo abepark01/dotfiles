@@ -147,12 +147,15 @@ set splitright
 let NERDTreeShowHidden=1
 
 " Load local settings
-if filereadable(expand("~/.vimrc.local"))
-  source ~/.vimrc.local
+if filereadable(expand("~/vimrc.before.local"))
+  source ~/.vimrc.before.local
 endif
-
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
+endif
+
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
 endif
 
 au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
