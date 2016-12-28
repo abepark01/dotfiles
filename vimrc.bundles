@@ -1,0 +1,31 @@
+if &compatible
+  set nocompatible
+end
+call plug#begin("~/.vim/bundle")
+
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'scrooloose/syntastic'
+Plug 'mtscout6/syntastic-local-eslint.vim'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'vim-ruby/vim-ruby'
+Plug 'vim-airline/vim-airline'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'chriskempson/base16-vim'
+Plug 'StanAngeloff/php.vim'
+Plug 'shawncplus/phpcomplete.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'elzr/vim-json'
+Plug 'kchmck/vim-coffee-script'
+Plug 'hail2u/vim-css3-syntax'
+
+if filereadable(expand("~/.vimrc.bundle.local"))
+  source ~/.vimrc.bundle.local
+endif
+
+call plug#end()
+

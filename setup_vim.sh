@@ -9,14 +9,12 @@ then
 fi
 
 mkdir -p $HOME/.vim/autoload
+mkdir -p $HOME/.vim/bundle
 mkdir -p $HOME/.vim/colors
-curl -LSso $HOME/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
-cp -R $BUNDLE_DIR/vim-tomorrow-theme/colors $HOME/.vim
-
-if [ ! -e $HOME/.vim/bundle ]
+if [ ! -e $HOME/.vimrc.bundles ]
 then
-  ln -s $BUNDLE_DIR $HOME/.vim/bundle
+  ln -s $DIR/vimrc.bundles $HOME/.vimrc.bundles
 fi
 
 if [ ! -e $HOME/.vim/ftplugin ]

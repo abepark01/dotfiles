@@ -85,7 +85,6 @@ set nobackup
 set nowb
 set noswapfile
 
-execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
@@ -148,6 +147,10 @@ set splitright
 let NERDTreeShowHidden=1
 
 " Load local settings
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
+
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
