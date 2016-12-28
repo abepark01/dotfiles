@@ -8,9 +8,20 @@ then
   ln -s $DIR/vimrc $HOME/.vimrc
 fi
 
-mkdir -p $HOME/.vim/autoload
-mkdir -p $HOME/.vim/bundle
-mkdir -p $HOME/.vim/colors
+if [ ! -e $HOME/.vim/autoload ]
+then
+  mkdir -p $HOME/.vim/autoload
+fi
+
+if [ ! -e $HOME/.vim/bundle ]
+then
+  mkdir -p $HOME/.vim/bundle
+fi
+
+if [ ! -e $HOME/.vim/colors ]
+then
+  mkdir -p $HOME/.vim/colors
+fi
 
 if [ ! -e $HOME/.vimrc.bundles ]
 then
