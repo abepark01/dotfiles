@@ -26,6 +26,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'dsawardekar/wordpress.vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'ternjs/tern_for_vim'
 
 if filereadable(expand("~/.vimrc.bundle.local"))
   source ~/.vimrc.bundle.local
