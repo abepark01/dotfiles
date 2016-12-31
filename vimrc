@@ -12,6 +12,7 @@ let g:mapleader = ","
 
 " Fast saving
 nmap <leader>w :w!<cr>
+inoremap jj <Esc>
 
 set shiftwidth=2
 set tabstop=2
