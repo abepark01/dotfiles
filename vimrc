@@ -130,6 +130,8 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 " NERDTree ignore
 let NERDTreeIgnore=['\.pyc$', '\~$']
+let NERDTreeShowHidden=1
+noremap <leader>r :NERDTreeFind<CR>
 
 " Get off my lawn!
 nnoremap <Left> :echoe "Use h"<CR>
@@ -146,9 +148,6 @@ nnoremap <C-H> <C-W><C-H>
 
 set splitbelow
 set splitright
-
-" NERDTree
-let NERDTreeShowHidden=1
 
 " Load local settings
 if filereadable(expand("~/vimrc.before.local"))
