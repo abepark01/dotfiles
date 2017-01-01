@@ -42,3 +42,8 @@ if [ ! -e $HOME/.tern-project ]
 then
   ln -s $DIR/tern-project $HOME/.tern-project
 fi
+
+if [ ! -e $HOME/.editor-config ]
+then
+  ln -s $DIR/editor-config $HOME/.editor-config
+fi
