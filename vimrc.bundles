@@ -3,7 +3,7 @@ if &compatible
 end
 call plug#begin("~/.vim/bundle")
 
-Plug 'ervandew/supertab'
+Plug '1995eaton/vim-better-javascript-completion'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/syntastic'
 Plug 'mtscout6/syntastic-local-eslint.vim'

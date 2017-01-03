@@ -2,12 +2,15 @@
   "libs": [
     "browser",
     "underscore",
-    "jquery"
+    "jquery",
+    "ecma5",
+    "ecma6"
   ],
   "plugins": {
     "node": {},
     "modules": {},
     "es_modules": {},
     "jasmine": {}
-  }
+  },
+  "ecmaVersion": 6
 }

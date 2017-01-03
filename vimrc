@@ -180,3 +180,8 @@ if executable('ag')
 endif
 
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:UltiSnipsExpandTrigger="<C-j>"
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+let g:SuperTabClosePreviewOnPopupClose = 1
