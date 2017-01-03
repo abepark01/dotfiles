@@ -43,7 +43,7 @@ then
   ln -s $DIR/tern-project $HOME/.tern-project
 fi
 
-if [ ! -e $HOME/.editor-config ]
+if [ ! -e $HOME/.editorconfig ]
 then
-  ln -s $DIR/editor-config $HOME/.editor-config
+  ln -s $DIR/editorconfig $HOME/.editorconfig
 fi
