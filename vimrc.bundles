@@ -29,8 +29,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'ternjs/tern_for_vim'
 Plug 'scrooloose/nerdtree'
 
-if filereadable(expand("~/.vimrc.bundle.local"))
-  source ~/.vimrc.bundle.local
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
 endif
 
 call plug#end()
