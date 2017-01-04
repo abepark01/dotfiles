@@ -14,7 +14,10 @@ let g:mapleader = ","
 nmap <leader>w :w!<cr>
 inoremap jj <Esc>
 
+
+set pastetoggle=<F2>
 set shiftwidth=2
+set shiftround
 set tabstop=2
 set expandtab
 
