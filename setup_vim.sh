@@ -8,6 +8,11 @@ then
   ln -s $DIR/vimrc $HOME/.vimrc
 fi
 
+if [ ! -e $HOME/.agignore ]
+then
+  ln -s $DIR/agignore $HOME/.agignore
+fi
+
 if [ ! -e $HOME/.vim/autoload ]
 then
   mkdir -p $HOME/.vim/autoload
