@@ -25,7 +25,7 @@ Plug 'elzr/vim-json'
 Plug 'kchmck/vim-coffee-script'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'ternjs/tern_for_vim'
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'scrooloose/nerdtree'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
