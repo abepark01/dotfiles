@@ -3,6 +3,7 @@ if &compatible
 end
 call plug#begin("~/.vim/bundle")
 
+Plug 'wavded/vim-stylus'
 Plug '1995eaton/vim-better-javascript-completion'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/syntastic'
