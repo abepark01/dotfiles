@@ -28,14 +28,19 @@ then
   mkdir -p $HOME/.vim/colors
 fi
 
+if [ ! -e $HOME/.vim/after ]
+then
+  mkdir -p $HOME/.vim/after
+fi
+
 if [ ! -e $HOME/.vimrc.bundles ]
 then
   ln -s $DIR/vimrc.bundles $HOME/.vimrc.bundles
 fi
 
-if [ ! -e $HOME/.vim/ftplugin ]
+if [ ! -e $HOME/.vim/after/ftplugin ]
 then
-  ln -s $DIR/vim/ftplugin $HOME/.vim/ftplugin
+  ln -s $DIR/vim/ftplugin $HOME/.vim/after/ftplugin
 fi
 
 if [ ! -e $HOME/.gemrc ]

@@ -28,6 +28,7 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'scrooloose/nerdtree'
+Plug 'alvan/vim-closetag'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
