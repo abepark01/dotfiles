@@ -186,4 +186,4 @@ let g:UltiSnipsExpandTrigger="<C-j>"
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 let g:SuperTabClosePreviewOnPopupClose = 1
 
-let g:closetag_filenames = "*.js,*.jsx,*.html,*.html.erb,*.php"
+let g:closetag_filenames = "*.js,*.jsx,*.html,*.html.erb,*.php,*.hbs"

@@ -29,6 +29,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'scrooloose/nerdtree'
 Plug 'alvan/vim-closetag'
+Plug 'mustache/vim-mustache-handlebars'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
