@@ -187,3 +187,4 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 let g:SuperTabClosePreviewOnPopupClose = 1
 
 let g:closetag_filenames = "*.js,*.jsx,*.html,*.html.erb,*.php,*.hbs"
+let g:solarized_termcolors=256

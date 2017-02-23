@@ -3,6 +3,8 @@ if &compatible
 end
 call plug#begin("~/.vim/bundle")
 
+Plug 'sickill/vim-monokai'
+Plug 'altercation/vim-colors-solarized'
 Plug 'wavded/vim-stylus'
 Plug '1995eaton/vim-better-javascript-completion'
 Plug 'ctrlpvim/ctrlp.vim'
