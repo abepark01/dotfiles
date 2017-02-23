@@ -3,6 +3,7 @@ if &compatible
 end
 call plug#begin("~/.vim/bundle")
 
+Plug 'morhetz/gruvbox'
 Plug 'sickill/vim-monokai'
 Plug 'altercation/vim-colors-solarized'
 Plug 'wavded/vim-stylus'
