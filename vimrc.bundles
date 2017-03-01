@@ -6,6 +6,8 @@ call plug#begin("~/.vim/bundle")
 Plug 'morhetz/gruvbox'
 Plug 'sickill/vim-monokai'
 Plug 'altercation/vim-colors-solarized'
+Plug 'sjl/badwolf'
+Plug 'nanotech/jellybeans.vim'
 Plug 'wavded/vim-stylus'
 Plug '1995eaton/vim-better-javascript-completion'
 Plug 'ctrlpvim/ctrlp.vim'
