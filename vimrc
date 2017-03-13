@@ -1,3 +1,4 @@
+set viminfo=
 if has("gui_macvim")
   set lines=45
   set columns=150
@@ -188,3 +189,4 @@ let g:SuperTabClosePreviewOnPopupClose = 1
 
 let g:closetag_filenames = "*.js,*.jsx,*.html,*.html.erb,*.php,*.hbs"
 let g:solarized_termcolors=256
+set clipboard=exclude:.*
