@@ -151,7 +151,7 @@ set splitbelow
 set splitright
 
 " Load local settings
-if filereadable(expand("~/vimrc.before.local"))
+if filereadable(expand("~/.vimrc.before.local"))
   source ~/.vimrc.before.local
 endif
 if filereadable(expand("~/.vimrc.bundles"))
