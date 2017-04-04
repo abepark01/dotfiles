@@ -1,5 +1,5 @@
 set viminfo=
-if has("gui_macvim")
+if has("gui_macvim") || has("gui_running")
   set lines=45
   set columns=150
 endif
