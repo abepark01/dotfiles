@@ -1,7 +1,12 @@
 if &compatible
   set nocompatible
 end
-call plug#begin("~/.vim/bundle")
+
+if has("win32")
+  call plug#begin('$HOME/vimfiles/bundle')
+else
+  call plug#begin("~/.vim/bundle")
+endif
 
 Plug 'morhetz/gruvbox'
 Plug 'chriskempson/vim-tomorrow-theme'
@@ -34,6 +39,8 @@ Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
+elseif has("win32") && filereadable(expand("$HOME/vimfiles/vimrc.bundles.local"))
+source $HOME/vimfiles/vimrc.bundles.local
 endif
 
 call plug#end()

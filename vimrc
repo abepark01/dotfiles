@@ -150,16 +150,25 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
-" Load local settings
+" Load local settings (before loading bundles)
 if filereadable(expand("~/.vimrc.before.local"))
   source ~/.vimrc.before.local
-endif
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
+elseif has("win32") && filereadable(expand("$HOME/vimfiles/vimrc.before.local"))
+ source $HOME/vimfiles/vimrc.before.local
 endif
 
+" Load bundles
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+elseif has("win32") && filereadable(expand("$HOME/vimfiles/vimrc.bundles"))
+  source $HOME/vimfiles/vimrc.bundles
+endif
+
+" Load local settings
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
+elseif has("win32") && filereadable(expand("$HOME/vimfiles/vimrc.local"))
+  source $HOME/vimfiles/vimrc.local
 endif
 
 au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
