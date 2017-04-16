@@ -1,11 +1,8 @@
 root = true
 
 [*]
-end_of_line = lf
 insert_final_newlint = true
 charset = utf-8
-indent_style = space
-indent_size = 2
 
 [*.py]
 indent_size = 4
@@ -13,4 +10,8 @@ indent_size = 4
 [*.php]
 indent_size = 4
 indent_style = tab
+
+[*.{js,html,css,stylus,scss,json,ts}]
+indent_size = 2
+indent_style = space
 
