@@ -3,14 +3,12 @@
     "browser",
     "underscore",
     "jquery",
-    "ecma5",
-    "ecma6"
+    "ecmascript"
   ],
   "plugins": {
     "node": {},
     "modules": {},
-    "es_modules": {},
-    "jasmine": {}
+    "es_modules": {}
   },
   "ecmaVersion": 6
 }
