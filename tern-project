@@ -2,7 +2,8 @@
   "libs": [
     "browser",
     "underscore",
-    "jquery"
+    "jquery",
+    "ecmascript"
   ],
   "plugins": {
     "node": {},
