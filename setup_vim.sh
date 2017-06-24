@@ -48,9 +48,9 @@ then
   ln -s $DIR/gemrc $HOME/.gemrc
 fi
 
-if [ ! -e $HOME/.tern-project ]
+if [ ! -e $HOME/.tern-config ]
 then
-  ln -s $DIR/tern-project $HOME/.tern-project
+  ln -s $DIR/tern-config $HOME/.tern-config
 fi
 
 if [ ! -e $HOME/.editorconfig ]
