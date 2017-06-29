@@ -134,13 +134,6 @@ let NERDTreeIgnore=['\.pyc$', '\~$']
 let NERDTreeShowHidden=1
 noremap <leader>r :NERDTreeFind<CR>
 
-" Get off my lawn!
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
-
-
 " Split screen
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
