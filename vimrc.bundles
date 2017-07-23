@@ -21,10 +21,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-markdown'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-bundler'
-Plug 'tpope/vim-rails'
-Plug 'vim-ruby/vim-ruby'
 Plug 'scrooloose/syntastic'
 Plug 'mtscout6/syntastic-local-eslint.vim'
 Plug 'pangloss/vim-javascript'
@@ -34,7 +30,6 @@ Plug 'elzr/vim-json'
 Plug 'kchmck/vim-coffee-script'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'hail2u/vim-css3-syntax'
-Plug 'wavded/vim-stylus'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 
 if filereadable(expand("~/.vimrc.bundles.local"))

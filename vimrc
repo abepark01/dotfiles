@@ -192,3 +192,13 @@ let g:SuperTabClosePreviewOnPopupClose = 1
 let g:closetag_filenames = "*.js,*.jsx,*.html,*.html.erb,*.php,*.hbs"
 let g:solarized_termcolors=256
 set clipboard=exclude:.*
+
+let g:airline#extensions#default#section_truncate_width = {}
+
+set statusline+=%#errormsg#
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
