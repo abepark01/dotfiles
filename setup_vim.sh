@@ -57,3 +57,10 @@ if [ ! -e $HOME/.editorconfig ]
 then
   ln -s $DIR/editorconfig $HOME/.editorconfig
 fi
+
+if [ ! -e $HOME/.vimrc.bundles.local ]
+then
+  cp ./vimrc.bundles.local $HOME/.vimrc.bundles.local
+fi
+
+./setup_plug.vim.sh

@@ -1,0 +1,2 @@
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --tern-completer --gocode-completer' }
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
