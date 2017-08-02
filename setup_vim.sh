@@ -69,3 +69,4 @@ then
 fi
 
 ./setup_plug.vim.sh
+./setup_base16_bashrc.sh
