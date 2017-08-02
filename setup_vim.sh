@@ -63,4 +63,9 @@ then
   cp ./vimrc.bundles.local $HOME/.vimrc.bundles.local
 fi
 
+if [ ! -e $HOME/.vimrc.local ]
+then
+  cp ./vimrc.local $HOME/.vimrc.local
+fi
+
 ./setup_plug.vim.sh
