@@ -184,21 +184,13 @@ endif
 
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
-autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-let g:UltiSnipsExpandTrigger="<C-j>"
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-let g:SuperTabClosePreviewOnPopupClose = 1
 
 let g:closetag_filenames = "*.js,*.jsx,*.html,*.html.erb,*.php,*.hbs"
-let g:solarized_termcolors=256
-set clipboard=exclude:.*
 
-let g:airline#extensions#default#section_truncate_width = {}
+" Write this in your vimrc file
+let g:ale_lint_on_text_changed = 'never'
+" You can disable this option too
+" if you don't want linters to run on opening a file
+let g:ale_lint_on_enter = 0
 
-set statusline+=%#errormsg#
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let python_highlight_all = 1

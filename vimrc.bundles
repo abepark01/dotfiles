@@ -30,6 +30,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
+Plug 'nvie/vim-flake8'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
