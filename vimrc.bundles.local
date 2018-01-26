@@ -1,2 +1,2 @@
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer', 'for': ['javascript', 'javascript.jsx'] }
+Plug 'Valloric/YouCompleteMe', { 'do': 'python3 ./install.py --js-completer --tern-completer' }
 Plug 'fatih/vim-go', { 'do': 'GoInstallBinaries', 'for': 'go'] }
