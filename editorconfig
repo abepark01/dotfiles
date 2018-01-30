@@ -13,7 +13,7 @@ indent_size = 4
 indent_size = 4
 indent_style = tab
 
-[*.{js,html,css,stylus,scss,json,ts}]
+[*.{js,html,css,stylus,scss,json,ts,coffee,rb,erb,jsx}]
 indent_size = 2
 indent_style = space
 
