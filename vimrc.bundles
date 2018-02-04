@@ -7,7 +7,8 @@ if has("win32")
 else
   call plug#begin("~/.vim/bundle")
 endif
-
+Plug 'leafgarland/typescript-vim'
+Plug 'mileszs/ack.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-repeat'
@@ -24,12 +25,20 @@ Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'cakebaker/scss-syntax.vim', { 'for': ['css', 'scss', 'sass'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'for': ['javascript', 'typescript', 'javascript.jsx'] }
 Plug 'nvie/vim-flake8', { 'for': 'python' }
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown'] }
 
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 elseif has("win32") && filereadable(expand("$HOME/vimfiles/vimrc.bundles.local"))
