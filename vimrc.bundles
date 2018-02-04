@@ -30,15 +30,6 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown'] }
 
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 elseif has("win32") && filereadable(expand("$HOME/vimfiles/vimrc.bundles.local"))
