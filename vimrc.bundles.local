@@ -7,4 +7,3 @@ else
 endif
 
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-Plug 'fatih/vim-go', { 'do': 'GoInstallBinaries', 'for': 'go'] }
