@@ -8,7 +8,6 @@ else
   call plug#begin("~/.vim/bundle")
 endif
 Plug 'trevordmiller/nova-vim'
-Plug 'leafgarland/typescript-vim'
 Plug 'mileszs/ack.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -25,7 +24,6 @@ Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'cakebaker/scss-syntax.vim', { 'for': ['css', 'scss', 'sass'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
-Plug 'nvie/vim-flake8', { 'for': 'python' }
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown'] }
