@@ -7,6 +7,7 @@ else
 endif
 
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+Plug 'zchee/deoplete-jedi'
 
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'

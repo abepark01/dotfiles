@@ -46,9 +46,6 @@ set cmdheight=2
 " A buffer becomes hidden when it is abandoned
 set hid
 
-" Ignore case when searching
-set ignorecase
-
 " When searching to be smart about cases
 set smartcase
 
@@ -194,6 +191,9 @@ let g:ale_lint_on_text_changed = 'never'
 " You can disable this option too
 " if you don't want linters to run on opening a file
 let g:ale_lint_on_enter = 0
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
 
 let python_highlight_all = 1
 

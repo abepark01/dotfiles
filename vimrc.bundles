@@ -28,6 +28,8 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown'] }
 
+Plug 'plytophogy/vim-virtualenv'
+Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 elseif has("win32") && filereadable(expand("$HOME/vimfiles/vimrc.bundles.local"))
