@@ -13,3 +13,5 @@ email = abepark01@gmail.com
 	autocrlf = false
 [push]
 	default = simple
+[init]
+	templatedir = ~/.git_template

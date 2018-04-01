@@ -7,6 +7,9 @@ if has("win32")
 else
   call plug#begin("~/.vim/bundle")
 endif
+Plug 'jwalton512/vim-blade'
+Plug 'stanangeloff/php.vim'
+Plug 'ap/vim-css-color'
 Plug 'trevordmiller/nova-vim'
 Plug 'mileszs/ack.vim'
 Plug 'chriskempson/base16-vim'
@@ -30,6 +33,7 @@ Plug 'prettier/vim-prettier', {
 
 Plug 'plytophogy/vim-virtualenv'
 Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
+Plug 'posva/vim-vue'
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 elseif has("win32") && filereadable(expand("$HOME/vimfiles/vimrc.bundles.local"))
