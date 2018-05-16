@@ -10,6 +10,7 @@ endif
 Plug 'jwalton512/vim-blade'
 Plug 'stanangeloff/php.vim'
 Plug 'ap/vim-css-color'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'trevordmiller/nova-vim'
 Plug 'mileszs/ack.vim'
 Plug 'chriskempson/base16-vim'
