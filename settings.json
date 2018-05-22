@@ -1,0 +1,28 @@
+{
+    "workbench.colorTheme": "Material Theme High Contrast",
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "editor.fontSize": 15,
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.formatOnPaste": true,
+    "editor.minimap.enabled": false,
+    "editor.smoothScrolling": true,
+    "editor.tabSize": 2,
+    "editor.cursorWidth": 3,
+    "explorer.openEditors.visible": 0,
+    "workbench.activityBar.visible": true,
+    "importCost.typescriptExtensions": [
+        "\\.tsx?$",
+        "\\.vue?$"
+    ],
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 0,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true,
+    "prettier.singleQuote": true,
+    "prettier.eslintIntegration": true,
+    "prettier.tabWidth": 2,
+    "editor.formatOnSave": true
+}
