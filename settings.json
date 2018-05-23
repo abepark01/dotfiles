@@ -24,5 +24,6 @@
     "prettier.singleQuote": true,
     "prettier.eslintIntegration": true,
     "prettier.tabWidth": 2,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "javascript.implicitProjectConfig.checkJs": true
 }
