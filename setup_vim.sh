@@ -12,6 +12,11 @@ if [ ! -e $HOME/.agignore ]
 then
   ln -s $DIR/agignore $HOME/.agignore
 fi
+if [ ! -e $HOME/.ackrc ]
+then
+  ln -s $DIR/ackrc $HOME/.ackrc
+fi
+
 
 if [ ! -e $HOME/.vim/autoload ]
 then

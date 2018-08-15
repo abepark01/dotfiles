@@ -6,6 +6,7 @@
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
     "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
     "editor.smoothScrolling": true,
     "editor.tabSize": 2,
     "editor.cursorWidth": 3,
@@ -25,5 +26,17 @@
     "prettier.eslintIntegration": true,
     "prettier.tabWidth": 2,
     "editor.formatOnSave": true,
-    "javascript.implicitProjectConfig.checkJs": true
+    "javascript.implicitProjectConfig.checkJs": true,
+    "sync.gist": "c54addad05a013f50a183f2d80d9dc7c",
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastUpload": "2018-06-11T21:25:27.034Z",
+    "sync.lastDownload": "",
+    "sync.forceDownload": false
 }
