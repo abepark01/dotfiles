@@ -8,3 +8,9 @@ vendor
 test-output
 public
 dist
+spec
+bin/
+target/
+*.log
+*.lock
+

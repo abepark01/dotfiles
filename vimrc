@@ -117,7 +117,7 @@ nnoremap <space> za
 " zc (close)
 " zo (open)
 
-" move vertially by visual line
+" move vertically by visual line
 nnoremap j gj
 nnoremap k gk
 
@@ -132,7 +132,7 @@ let NERDTreeShowHidden=1
 noremap <leader>r :NERDTreeFind<CR>
 
 " Split screen
-nnoremap <C-J> <C-W><C-J>
+nnoremap <C-j> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>

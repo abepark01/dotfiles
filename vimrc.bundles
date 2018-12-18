@@ -31,7 +31,7 @@ Plug 'cakebaker/scss-syntax.vim', { 'for': ['css', 'scss', 'sass'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
+  \ 'for': ['html', 'javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
 
 Plug 'plytophogy/vim-virtualenv'
 Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
