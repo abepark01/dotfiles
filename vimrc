@@ -8,6 +8,10 @@ if has('unix')
   set t_Co=256
 endif
 
+command! W :w
+
+set winwidth=110
+
 let mapleader = ","
 let g:mapleader = ","
 
@@ -54,6 +58,8 @@ set hlsearch
 
 " Makes search act like search in modern browsers
 set incsearch
+
+set ignorecase
 
 " don't redraw while executing macros (good performance config)
 set lazyredraw
@@ -247,3 +253,5 @@ let g:prettier#config#config_precedence = 'prefer-file'
 
 " always|never|preserve
 let g:prettier#config#prose_wrap = 'preserve'
+
+let g:deoplete#_python_version_check = 1
