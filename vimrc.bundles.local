@@ -1,13 +1,11 @@
 if has('nvim')
+  Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'tyrannicaltoucan/vim-quantum'
+  Plug 'zchee/deoplete-jedi'
 else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
-Plug 'zchee/deoplete-go', { 'build': 'make' }
-Plug 'zchee/deoplete-clang'
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-Plug 'zchee/deoplete-jedi'
