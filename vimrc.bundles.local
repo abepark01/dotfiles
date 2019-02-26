@@ -11,5 +11,3 @@ Plug 'zchee/deoplete-go', { 'build': 'make' }
 Plug 'zchee/deoplete-clang'
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 Plug 'zchee/deoplete-jedi'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-endwise'
