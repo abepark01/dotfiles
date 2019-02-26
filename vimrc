@@ -10,8 +10,6 @@ endif
 
 command! W :w
 
-set winwidth=110
-
 let mapleader = ","
 let g:mapleader = ","
 
