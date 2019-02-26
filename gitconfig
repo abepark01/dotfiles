@@ -15,3 +15,5 @@ email = abepark01@gmail.com
 	default = simple
 [init]
 	templatedir = ~/.git_template
+[pager]
+	branch = false
