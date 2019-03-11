@@ -1,19 +1,14 @@
-# This is Git's per-user configuration file.
-[user]
-# Please adapt and uncomment the following lines:
-name = Abe Park
-email = abepark01@gmail.com
+[core]
+  autocrlf = false
+[push]
+  default = simple
 [alias]
 	co = checkout
 	br = branch
 	ci = commit
 	st = status
-[core]
-[core]
-	autocrlf = false
-[push]
-	default = simple
-[init]
-	templatedir = ~/.git_template
+[user]
+	name = Abe Park
+	email = abepark01@outlook.com
 [pager]
 	branch = false

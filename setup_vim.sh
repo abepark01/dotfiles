@@ -73,5 +73,10 @@ then
   cp ./vimrc.local $HOME/.vimrc.local
 fi
 
+if [ ! -e $HOME/.gitconfig ]
+then
+  ln -s $DIR/gitconfig $HOME/.gitconfig
+fi
+
 ./setup_plug.vim.sh
 ./setup_base16_bashrc.sh
