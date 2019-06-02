@@ -7,7 +7,6 @@ tmp/
 vendor
 test-output
 dist/
-spec/
 bin/
 packs/
 target/
