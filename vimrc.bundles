@@ -12,7 +12,6 @@ Plug 'ap/vim-css-color'
 Plug 'cakebaker/scss-syntax.vim', { 'for': ['css', 'scss', 'sass'] }
 Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'editorconfig/editorconfig-vim'
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'fatih/vim-go'
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
@@ -25,6 +24,7 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'plytophogy/vim-virtualenv'
 Plug 'posva/vim-vue'
+Plug 'nvie/vim-flake8'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['html', 'javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
@@ -39,8 +39,11 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-bundler'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
 Plug 'w0rp/ale'
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-path'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
