@@ -178,7 +178,7 @@ if executable('ag')
   " use ag ove grep
   set grepprg=ag\ --nogroup\ --nocolor
 
-  let g:ackprg='ag --vimgrep'
+  let g:ackprg='ag --vimgrep -s'
 
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
   " ag is fast enough that CtrlP doesn't need to cache
