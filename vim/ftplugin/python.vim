@@ -25,6 +25,8 @@ let g:ycm_python_binary_path = 'python'
 
 au BufRead,BufNewFile *.py,*.ptw,*.c,*.h highlight BadWhiteSpace ctermbg=red guibg=red
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhiteSpace /\s\+$/
+au FileType py set foldmethod=indent
+
 
 let g:syntastic_python_checkers=['flake8']
 let g:syntastic_python_flake8_args="--ignore=E501"

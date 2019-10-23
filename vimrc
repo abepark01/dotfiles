@@ -165,11 +165,6 @@ elseif has("win32") && filereadable(expand("$HOME/vimfiles/vimrc.local"))
   source $HOME/vimfiles/vimrc.local
 endif
 
-au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
-au FileType py set foldmethod=indent
-
-au BufNewFile,BufRead *.coffee set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab
-
 " ctrlp settings
 let g:ctrlp_custom_ignore = 'node_modules'
 
