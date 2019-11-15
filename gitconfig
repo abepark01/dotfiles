@@ -12,3 +12,5 @@
 	email = 7087312+abepark01@users.noreply.github.com
 [pager]
 	branch = false
+[color]
+	ui = true
