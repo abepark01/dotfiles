@@ -13,9 +13,8 @@ Plug 'cakebaker/scss-syntax.vim', { 'for': ['css', 'scss', 'sass'] }
 Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'elzr/vim-json', { 'for': 'json' }
-Plug 'fatih/vim-go'
+Plug 'gagoar/stripwhitespaces'
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
-Plug 'jwalton512/vim-blade'
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'mileszs/ack.vim'
 Plug 'mustache/vim-mustache-handlebars'
@@ -23,14 +22,12 @@ Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'plytophogy/vim-virtualenv'
-Plug 'posva/vim-vue'
 Plug 'nvie/vim-flake8'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['html', 'javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
 
 Plug 'scrooloose/nerdtree'
-Plug 'stanangeloff/php.vim'
 Plug 'trevordmiller/nova-vim'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
