@@ -13,7 +13,6 @@ Plug 'cakebaker/scss-syntax.vim', { 'for': ['css', 'scss', 'sass'] }
 Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'elzr/vim-json', { 'for': 'json' }
-Plug 'gagoar/stripwhitespaces'
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'mileszs/ack.vim'
