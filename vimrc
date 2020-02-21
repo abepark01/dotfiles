@@ -196,7 +196,6 @@ let g:ale_linters = {
 
 let python_highlight_all = 1
 
-
 let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
