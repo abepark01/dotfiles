@@ -45,6 +45,13 @@ set wildignore=*.o,*~,*.pyc
 " Height of the command bar
 set cmdheight=2
 
+" Having longer updatetime (default is 4000 ms = 4s) leaders to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+set shortmess+=c
+set signcolumn=yes
+
 " A buffer becomes hidden when it is abandoned
 set hid
 
@@ -195,8 +202,15 @@ let g:ale_linters = {
 \}
 
 let python_highlight_all = 1
+let g:python3_host_prog = "/usr/local/bin/python3"
 
 let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
+
+if filereadable(expand("~/.coc.vimrc.bundles"))
+  source ~/.coc.vimrc
+endif
+
+
 

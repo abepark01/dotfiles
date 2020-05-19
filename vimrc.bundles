@@ -8,6 +8,7 @@ else
   call plug#begin("~/.vim/bundle")
 endif
 
+Plug 'editorconfig/editorconfig-vim'
 Plug 'ap/vim-css-color'
 Plug 'cakebaker/scss-syntax.vim', { 'for': ['css', 'scss', 'sass'] }
 Plug 'chriskempson/base16-vim'
@@ -40,7 +41,10 @@ Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
-
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"
+" (Optional) Multi-entry selection UI.
+Plug 'junegunn/fzf'
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 elseif has("win32") && filereadable(expand("$HOME/vimfiles/vimrc.bundles.local"))
