@@ -63,6 +63,11 @@ then
   ln -s $DIR/editorconfig $HOME/.editorconfig
 fi
 
+if [ ! -e $HOME/.coc.vimrc ]
+then
+  ln -s $DIR/coc.vimrc $HOME/.coc.vimrc
+fi
+
 if [ ! -e $HOME/.vimrc.bundles.local ]
 then
   cp ./vimrc.bundles.local $HOME/.vimrc.bundles.local
@@ -72,6 +77,7 @@ if [ ! -e $HOME/.vimrc.local ]
 then
   cp ./vimrc.local $HOME/.vimrc.local
 fi
+
 
 if [ ! -e $HOME/.gitconfig ]
 then
