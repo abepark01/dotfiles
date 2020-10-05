@@ -8,7 +8,6 @@ vendor
 test-output
 dist/
 bin/
-packs/
 target/
 package-lock.json
 *.log
