@@ -184,23 +184,20 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 let g:closetag_filenames = "*.js,*.jsx,*.html,*.html.erb,*.php,*.hbs"
 
 " Write this in your vimrc file
-let g:ale_lint_on_text_changed = 'never'
+" let g:ale_lint_on_text_changed = 'never'
 " You can disable this option too
 " if you don't want linters to run on opening a file
-let g:ale_lint_on_enter = 0
+" let g:ale_lint_on_enter = 0
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \}
 
 let python_highlight_all = 1
 
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
 
 if (has('nvim') || v:version >= 8) && filereadable(expand("~/.coc.vimrc.bundles"))
   source ~/.coc.vimrc
 endif
-
-
-

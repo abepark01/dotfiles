@@ -5,15 +5,21 @@ insert_final_newline = true
 charset = utf-8
 end_of_line = lf
 trim_trailing_whitespace = true
+indent_size = 2
 
 [*.py]
 indent_size = 4
+indent_style = space
 
 [*.php]
 indent_size = 4
 indent_style = tab
 
-[*.rb]
+[*.{js,html,css,scss,sass,stylus,yml,json,erb,haml}]
+indent_size = 2
+indent_style = space
+
+[*.{c,cc,cpp,h,hpp,hxx,hh,cxx,c++}]
 indent_size = 2
 indent_style = space
 
