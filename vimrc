@@ -55,8 +55,6 @@ set hlsearch
 " Makes search act like search in modern browsers
 set incsearch
 
-set ignorecase
-
 " don't redraw while executing macros (good performance config)
 set lazyredraw
 
@@ -201,3 +199,4 @@ autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
 if (has('nvim') || v:version >= 8) && filereadable(expand("~/.coc.vimrc.bundles"))
   source ~/.coc.vimrc
 endif
+let g:ale_disable_lsp = 1
