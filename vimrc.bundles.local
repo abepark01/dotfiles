@@ -1,8 +1,4 @@
 if has('nvim')
-  Plug 'tyrannicaltoucan/vim-quantum'
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 else
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
 endif
 

@@ -124,7 +124,6 @@ nnoremap k gk
 autocmd BufWritePre *.html,*.css,*.scss,*.js,*.py,*.rb,*.h,*.c,*.cpp :%s/\s\+$//e
 
 let g:jsx_ext_required = 0
-let g:syntastic_javascript_checkers = ['eslint']
 
 " NERDTree ignore
 let NERDTreeIgnore=['\.pyc$', '\~$']
@@ -181,22 +180,47 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 let g:closetag_filenames = "*.js,*.jsx,*.html,*.html.erb,*.php,*.hbs"
 
-" Write this in your vimrc file
-" let g:ale_lint_on_text_changed = 'never'
-" You can disable this option too
-" if you don't want linters to run on opening a file
-" let g:ale_lint_on_enter = 0
-let g:ale_linters = {
-\   'javascript': ['eslint'],
-\}
-
-let python_highlight_all = 1
-
-" let g:deoplete#enable_at_startup = 1
+let g:ale_javascript_eslint_executable = 'eslint_d'
+let g:ale_javascript_eslint_use_global = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
 
-if (has('nvim') || v:version >= 8) && filereadable(expand("~/.coc.vimrc.bundles"))
-  source ~/.coc.vimrc
-endif
-let g:ale_disable_lsp = 1
+" testing extra-powerline-symbols
+
+" set font terminal font or set gui vim font
+" to a Nerd Font (https://github.com/ryanoasis/nerd-fonts):
+set guifont=DroidSansMono\ Nerd\ Font\ 12
+
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
+let g:lightline = {}
+
+let g:lightline.component_expand = {
+      \  'linter_checking': 'lightline#ale#checking',
+      \  'linter_infos': 'lightline#ale#infos',
+      \  'linter_warnings': 'lightline#ale#warnings',
+      \  'linter_errors': 'lightline#ale#errors',
+      \  'linter_ok': 'lightline#ale#ok',
+      \ }
+
+let g:lightline.component_type = {
+      \     'linter_checking': 'right',
+      \     'linter_infos': 'right',
+      \     'linter_warnings': 'warning',
+      \     'linter_errors': 'error',
+      \     'linter_ok': 'right',
+      \ }
+
+let g:lightline.active = {
+            \ 'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok' ],
+            \            [ 'lineinfo' ],
+	    \            [ 'percent' ],
+	    \            [ 'fileformat', 'fileencoding', 'filetype'] ] }
+
+let g:lightline#ale#indicator_checking = "\uf110"
+let g:lightline#ale#indicator_infos = "\uf129"
+let g:lightline#ale#indicator_warnings = "\uf071"
+let g:lightline#ale#indicator_errors = "\uf05e"
+let g:lightline#ale#indicator_ok = "\uf00c"
+
