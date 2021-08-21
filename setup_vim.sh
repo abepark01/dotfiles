@@ -84,5 +84,10 @@ then
   ln -s $DIR/gitconfig $HOME/.gitconfig
 fi
 
+if [ ! -r $HOME/.config/nvim ]
+then
+  ln -s $DIR/config/nvim $HOME/.config/nvim
+fi
+
 ./setup_plug.vim.sh
 ./setup_base16_bashrc.sh
