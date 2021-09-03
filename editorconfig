@@ -19,7 +19,7 @@ indent_style = space
 indent_size = 4
 indent_style = tab
 
-[*.{js,html,css,scss,sass,stylus,yml,json,erb,haml,rb,rake,lua,vim}]
+[*.{js,html,css,scss,sass,stylus,yml,json,erb,haml,rb,rake,lua,vim,ts,jsx,tsx}]
 indent_size = 2
 indent_style = space
 
