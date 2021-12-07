@@ -51,9 +51,9 @@ if has('nvim')
   Plug 'hrsh7th/nvim-compe'
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'glepnir/lspsaga.nvim'
-  Plug 'kabouzeid/nvim-lspinstall'
   Plug 'folke/trouble.nvim'
   Plug 'kyazdani42/nvim-tree.lua'
+  Plug 'williamboman/nvim-lsp-installer'
 else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
