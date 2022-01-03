@@ -192,8 +192,5 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 set guifont=DroidSansMono\ Nerd\ Font\ 12
 
 let g:ale_linters = { 'javascript': ['eslint'] }
-let g:ale_echo_msg_error_str = 'E'
-let g:ale_echo_msg_warning_str = 'W'
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 " Equivalent to the above.
 let g:ale_linters = {'javascript': ['prettier', 'eslint']}
