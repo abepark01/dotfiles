@@ -34,39 +34,39 @@ local on_attach = function(client, bufnr)
 end
 
 local filetypes = {
-    typescript = "eslint",
-    typescriptreact = "eslint",
+  typescript = "eslint",
+  typescriptreact = "eslint",
 }
 local linters = {
-    eslint = {
-        sourceName = "eslint",
-        command = "eslint_d",
-        rootPatterns = {".eslintrc.js", ".eslintrc", ".eslintrc.json", "package.json"},
-        debounce = 100,
-        args = {"--stdin", "--stdin-filename", "%filepath", "--format", "json"},
-        parseJson = {
-            errorsRoot = "[0].messages",
-            line = "line",
-            column = "column",
-            endLine = "endLine",
-            endColumn = "endColumn",
-            message = "${message} [${ruleId}]",
-            security = "severity"
-        },
-        securities = {[2] = "error", [1] = "warning"}
-    }
+  eslint = {
+    sourceName = "eslint",
+    command = "eslint_d",
+    rootPatterns = {".eslintrc.js", ".eslintrc", ".eslintrc.json", "package.json"},
+    debounce = 100,
+    args = {"--stdin", "--stdin-filename", "%filepath", "--format", "json"},
+    parseJson = {
+      errorsRoot = "[0].messages",
+      line = "line",
+      column = "column",
+      endLine = "endLine",
+      endColumn = "endColumn",
+      message = "${message} [${ruleId}]",
+      security = "severity"
+    },
+    securities = {[2] = "error", [1] = "warning"}
+  }
 }
 local formatters = {
-    prettier = {command = "prettier", args = {"--stdin-filepath", "%filepath"}}
+  prettier = {command = "prettier", args = {"--stdin-filepath", "%filepath"}}
 }
 local formatFiletypes = {
-    typescript = "prettier",
-    typescriptreact = "prettier"
+  typescript = "prettier",
+  typescriptreact = "prettier"
 }
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'tsserver', 'solargraph' }
+local servers = { 'clangd', 'ccls', 'cmake', 'tsserver', 'solargraph', 'tailwindcss', 'html', 'cssls', 'emmet_ls', 'jsonls', 'yamlls', 'eslint' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
@@ -75,7 +75,6 @@ for _, lsp in ipairs(servers) do
     }
   }
 end
-
 
 nvim_lsp.diagnosticls.setup {
   on_attach = on_attach,
