@@ -26,7 +26,7 @@ let g:compe.source.nvim_lua = v:true
 let g:compe.source.vsnip = v:true
 let g:compe.source.ultisnips = v:true
 
-source lsp.lua
-source lspsaga.vim
-source trouble.lua
-source nvim-tree.lua
+source ~/.config/nvim/lsp.lua
+source ~/.config/nvim/lspsaga.vim
+source ~/.config/nvim/trouble.lua
+source ~/.config/nvim/nvim-tree.lua
