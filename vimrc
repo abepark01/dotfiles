@@ -180,8 +180,6 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 let g:closetag_filenames = "*.js,*.jsx,*.html,*.html.erb,*.php,*.hbs"
 
-let g:ale_javascript_eslint_executable = 'eslint_d'
-let g:ale_javascript_eslint_use_global = 1
 let g:ale_disable_lsp = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
@@ -191,6 +189,5 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 " to a Nerd Font (https://github.com/ryanoasis/nerd-fonts):
 set guifont=DroidSansMono\ Nerd\ Font\ 12
 
-let g:ale_linters = { 'javascript': ['eslint'] }
 " Equivalent to the above.
 let g:ale_linters = {'javascript': ['prettier', 'eslint']}

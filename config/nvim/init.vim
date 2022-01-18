@@ -29,4 +29,3 @@ let g:compe.source.ultisnips = v:true
 source ~/.config/nvim/lsp.lua
 source ~/.config/nvim/lspsaga.vim
 source ~/.config/nvim/trouble.lua
-source ~/.config/nvim/nvim-tree.lua

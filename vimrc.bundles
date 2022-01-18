@@ -53,7 +53,6 @@ if has('nvim')
   Plug 'glepnir/lspsaga.nvim'
   Plug 'folke/trouble.nvim'
   Plug 'kyazdani42/nvim-tree.lua'
-  Plug 'williamboman/nvim-lsp-installer'
 else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
