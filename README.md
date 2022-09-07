@@ -1,7 +1,3 @@
 # dotfiles
-Abe's dotfiles...
+Abe's dotfiles for neovim
 
-.vimrc
-vim bundles
-.gemrc
-etc...
