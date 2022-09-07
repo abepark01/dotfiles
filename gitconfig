@@ -10,7 +10,7 @@
 	ci = commit
 	st = status
 [user]
-	name = Abe Park
+	name = Abe
     email = 7087312+abepark01@users.noreply.github.com
 [pager]
 	branch = false
@@ -18,3 +18,8 @@
 	ui = true
 [init]
 	defaultBranch = master
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

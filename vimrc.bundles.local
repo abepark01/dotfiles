@@ -1,4 +1,0 @@
-if has('nvim')
-else
-endif
-
