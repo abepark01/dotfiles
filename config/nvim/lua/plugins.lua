@@ -29,6 +29,8 @@ packer.startup(function(use)
   use 'nvim-lua/plenary.nvim'
   use 'folke/trouble.nvim'
   use 'nvim-telescope/telescope.nvim'
+  use 'nvim-telescope/telescope-fzf-native.nvim'
+
   use 'nvim-telescope/telescope-file-browser.nvim'
   use 'norcalli/nvim-colorizer.lua'
   use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
@@ -44,6 +46,5 @@ packer.startup(function(use)
   use 'tpope/vim-surround'
   use 'tpope/vim-bundler'
   use 'editorconfig/editorconfig-vim'
-  use 'mileszs/ack.vim'
   use { 'kchmck/vim-coffee-script', ft = 'coffee' }
 end)
