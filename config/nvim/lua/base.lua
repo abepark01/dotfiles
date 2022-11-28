@@ -2,6 +2,7 @@ vim.cmd('autocmd!')
 vim.g.mapleader = ','
 
 vim.api.nvim_set_keymap('i', 'jj', '<Esc>',  { noremap = true })
+vim.api.nvim_set_option("clipboard","unnamed")
 
 vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'

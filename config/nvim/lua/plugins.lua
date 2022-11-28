@@ -46,5 +46,6 @@ packer.startup(function(use)
   use 'tpope/vim-surround'
   use 'tpope/vim-bundler'
   use 'editorconfig/editorconfig-vim'
-  use { 'kchmck/vim-coffee-script', ft = 'coffee' }
+  use 'prettier/vim-prettier'
+  use 'kchmck/vim-coffee-script'
 end)

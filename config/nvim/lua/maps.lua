@@ -11,7 +11,3 @@ set_keymap('n', '<space>', 'za', { noremap = true })
 -- increment/decrement
 keymap.set('n', '+', '<C-a>')
 keymap.set('n', '-', '<C-x>')
-
-
--- Delete a word backwards
-keymap.set('n', 'dw', 'vb"_d')
