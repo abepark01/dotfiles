@@ -13,6 +13,12 @@ set_keymap('v', '<leader>d', 'd', { noremap = true })
 set_keymap('n', 'd', [["_d]], { noremap = true })
 set_keymap('n', 'D', [["_D]], { noremap = true })
 set_keymap('v', 'd', [["_d]], { noremap = true })
+set_keymap('n', '<leader>c', 'c', { noremap = true })
+set_keymap('n', '<leader>C', 'C', { noremap = true })
+set_keymap('v', '<leader>c', 'c', { noremap = true })
+set_keymap('n', 'c', [["_c]], { noremap = true })
+set_keymap('n', 'C', [["_C]], { noremap = true })
+set_keymap('v', 'c', [["_c]], { noremap = true })
 
 -- increment/decrement
 keymap.set('n', '+', '<C-a>')
