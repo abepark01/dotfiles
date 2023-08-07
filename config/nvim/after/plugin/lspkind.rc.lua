@@ -1,3 +1,7 @@
+local status, lspkind = pcall(require, 'lspkind')
+
+if (not status) then return end
+
 require('lspkind').init({
   -- DEPRECATED (use mode instead): enables text annotations
   --
