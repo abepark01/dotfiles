@@ -1,1 +1,1 @@
-vim.cmd 'colorscheme quantum'
+vim.cmd 'silent! colorscheme quantum'
