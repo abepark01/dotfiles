@@ -96,8 +96,8 @@ nvim_lsp.lua_ls.setup {
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
   underline = true,
-  update_on_insert = false,
-  virtual_text = { spacing = 4, prefix = "●" },
+  update_on_insert = true,
+  virtual_text = { spacing = 4, prefix = "●", severity_limit = "Warning" },
   severity_sort = true,
 }
 )
