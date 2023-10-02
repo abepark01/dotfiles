@@ -17,6 +17,8 @@ ts.setup {
     'html',
     'lua',
     'json',
+    'markdown',
+    'markdown_inline',
     'css',
     'php',
     'ruby',

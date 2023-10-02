@@ -34,7 +34,7 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope-file-browser.nvim'
   use 'norcalli/nvim-colorizer.lua'
   use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
-  use 'glepnir/lspsaga.nvim'
+  use 'nvimdev/lspsaga.nvim'
   use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   use 'jay-babu/mason-null-ls.nvim'
   use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
