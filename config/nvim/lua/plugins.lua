@@ -22,7 +22,7 @@ lazy.setup({
   'tyrannicaltoucan/vim-quantum',
   {
     'nvim-lualine/lualine.nvim',
-    dependencies = {{ 'kyazdani42/nvim-web-devicons', lazy = true }}
+    dependencies = {{ 'nvim-tree/nvim-web-devicons', lazy = true }}
   },
   'neovim/nvim-lspconfig',
   'hrsh7th/cmp-buffer',
@@ -49,13 +49,13 @@ lazy.setup({
   'nvim-telescope/telescope-fzf-native.nvim',
   'nvim-telescope/telescope-file-browser.nvim',
   'norcalli/nvim-colorizer.lua',
-  { 'akinsho/bufferline.nvim', version = "v2.*", dependencies = {'kyazdani42/nvim-web-devicons' }},
+  { 'akinsho/bufferline.nvim', version = "v2.*", dependencies = {'nvim-tree/nvim-web-devicons' }},
   'jose-elias-alvarez/null-ls.nvim', -- Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   'jay-babu/mason-null-ls.nvim',
   'MunifTanjim/prettier.nvim', -- Prettier plugin for Neovim's built-in LSP client
   "williamboman/mason.nvim",
   'williamboman/mason-lspconfig.nvim',
-  'kyazdani42/nvim-web-devicons',
+  'nvim-tree/nvim-web-devicons',
   'tpope/vim-rails',
   'tpope/vim-endwise',
   'tpope/vim-repeat',
