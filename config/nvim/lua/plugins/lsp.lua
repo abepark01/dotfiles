@@ -15,14 +15,19 @@ return {
 			vim.list_extend(opts.ensure_installed, {
 				"css-lsp",
         "diagnostic-languageserver",
+        "docker-compose-language-service",
+        "docker-file-language-server",
         "eslint_d",
         "graphql-language-service-cli",
         "html-lsp",
         "htmlbeautifier",
         "json-lsp",
         "prettierd",
+        "prisma-language-server",
+        "stylua",
 				"tailwindcss-language-server",
 				"typescript-language-server",
+        "yaml-language-server"
 			})
 		end,
 	}
