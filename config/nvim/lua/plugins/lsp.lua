@@ -16,7 +16,7 @@ return {
 				"css-lsp",
         "diagnostic-languageserver",
         "docker-compose-language-service",
-        "docker-file-language-server",
+        "dockerfile-language-server",
         "eslint_d",
         "graphql-language-service-cli",
         "html-lsp",
