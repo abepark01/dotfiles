@@ -14,6 +14,7 @@ return {
     opts = {
       ensure_installed = {
         "css",
+        "csv",
         "bash",
         "dockerfile",
         "graphql",
@@ -29,6 +30,7 @@ return {
         "query",
         "regex",
         "ruby",
+        "scss",
         "sql",
         "tsx",
         "typescript",

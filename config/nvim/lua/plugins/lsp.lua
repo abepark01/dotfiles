@@ -17,6 +17,7 @@ return {
         "diagnostic-languageserver",
         "docker-compose-language-service",
         "dockerfile-language-server",
+        "erb-formatter",
         "erb-lint",
         "eslint_d",
         "graphql-language-service-cli",
