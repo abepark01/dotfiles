@@ -20,7 +20,6 @@ return {
         "html",
         "javascript",
         "json",
-        "lua",
         "markdown",
         "markdown_inline",
         "prisma",
