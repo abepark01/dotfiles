@@ -5,7 +5,8 @@ return {
   opts = {
     -- Define your formatters
     formatters_by_ft = {
-      javascript = { { "prettierd", "prettier" } },
+      ["javascript"] = { "prettierd" },
+      ["python"] = { "black" },
     },
   },
 }
