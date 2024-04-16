@@ -14,12 +14,14 @@ return {
     opts = {
       ensure_installed = {
         "css",
+        "csv",
         "bash",
         "dockerfile",
         "graphql",
         "html",
         "javascript",
         "json",
+        "jsonc",
         "lua",
         "markdown",
         "markdown_inline",
@@ -28,6 +30,7 @@ return {
         "query",
         "regex",
         "ruby",
+        "scss",
         "sql",
         "tsx",
         "typescript",
