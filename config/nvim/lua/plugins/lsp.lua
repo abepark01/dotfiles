@@ -13,6 +13,7 @@ return {
 		"williamboman/mason.nvim",
 		opts = function(_, opts)
 			vim.list_extend(opts.ensure_installed, {
+        "black",
 				"css-lsp",
         "diagnostic-languageserver",
         "docker-compose-language-service",
@@ -24,6 +25,7 @@ return {
         "json-lsp",
         "prettierd",
         "prisma-language-server",
+        "pyright",
         "rubocop",
         "ruby-lsp",
         "solargraph",
